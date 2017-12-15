@@ -9,11 +9,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.google.android.gms.ads.MobileAds;
+
 public class MainActivity extends Activity {
     Button dogButton;
     Button catButton;
     Button sendButton;
     ImageView animalImageView;
+    String appIdAdMob = "ca-app-pub-4038286169752674~1920671748";
     //Drawable dogImage;
 
     @Override
@@ -21,10 +24,13 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        animalImageView = (ImageView) findViewById(R.id.animalView);
-        dogButton = (Button) findViewById(R.id.Dog);
-        catButton = (Button) findViewById(R.id.Cat);
-        sendButton = (Button) findViewById(R.id.SendButton);
+        //Initialize ads
+        MobileAds.initialize(this,appIdAdMob);
+
+        animalImageView = findViewById(R.id.animalView);
+        dogButton = findViewById(R.id.Dog);
+        catButton = findViewById(R.id.Cat);
+        sendButton = findViewById(R.id.SendButton);
 
         dogButton.setOnClickListener(new View.OnClickListener() {
             @Override
