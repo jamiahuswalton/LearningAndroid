@@ -4,4 +4,5 @@
     <string name="DogButtonName">Dog</string>
     <string name="ImageDisplayDiscription">Cat or Dog</string>
     <string name="SendButtonName">Send</string>
+    <string name="secondActivity_Description">Lets have fun with layouts. This is vertical</string>
 </resources>
