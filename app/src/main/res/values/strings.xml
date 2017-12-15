@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Learning Android</string>
+    <string name="CatButtonName">Cat</string>
+    <string name="DogButtonName">Dog</string>
+    <string name="ImageDisplayDiscription">Cat or Dog</string>
+    <string name="SendButtonName">Send</string>
+</resources>
