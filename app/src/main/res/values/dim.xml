@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="TextSize_Normal">20sp</dimen>
+    <dimen name="TextSize_Normal">18sp</dimen>
     <dimen name="TextSize_Button">18sp</dimen>
 </resources>

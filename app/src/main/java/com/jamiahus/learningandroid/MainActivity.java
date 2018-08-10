@@ -8,21 +8,38 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 
 public class MainActivity extends Activity {
+
+    //This is the start
     Button dogButton;
     Button catButton;
     Button sendButton;
     ImageView animalImageView;
     String appIdAdMob = "ca-app-pub-4038286169752674~1920671748";
     //Drawable dogImage;
+    ProgressBar myProgressBar;
+    int activityOrderNum = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        AdView myAd = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        myAd.loadAd(adRequest);
+
+        String numOfTotalActivities = getString(R.string.Total_Number_of_Activities);
+        float numOfTatalActivitiesFloat = Float.valueOf(numOfTotalActivities);
+        int progressValue = Math.round(activityOrderNum / numOfTatalActivitiesFloat * 100);
+        myProgressBar = findViewById(R.id.myProgressBar);
+        myProgressBar.setProgress(progressValue);
 
         //Initialize ads
         MobileAds.initialize(this,appIdAdMob);

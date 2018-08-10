@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:weightSum="12"
-    tools:context="com.jamiahus.learningandroid.SecondActivity">
+    tools:context="com.jamiahus.learningandroid.ThirdActivity">
 
     <ProgressBar
         android:id="@+id/myProgressBar"
@@ -16,56 +17,36 @@
         android:layout_weight="1"/>
 
 
-
     <TextView
-        android:id="@+id/descriptionSecondActivity"
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="@string/secondActivity_Description"
-        android:textSize="@dimen/TextSize_Normal" />
+        android:text="Change the images below using the button below. This section is shwoing how to use fragments" />
 
-
-
-    <ImageView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="4"
-        android:contentDescription="@string/ImageDisplayDiscription"
-        android:src="@drawable/cat" />
+        android:layout_weight="8"
+        android:id="@+id/fragmentContainer"
+        android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="4"
-        android:contentDescription="@string/ImageDisplayDiscription"
-        android:src="@drawable/dog_280332_960_720" />
 
-    <!--TODO Change the id back to the real banner ID before APK build-->
+    </LinearLayout>
+
     <Button
-        android:id="@+id/button_NextActivity"
+        android:id="@+id/buttonChangeFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="@string/SendButtonName"/>
+        android:text="Change" />
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:layout_centerHorizontal = "true"
         ads:adSize= "BANNER"
         ads:adUnitId= "@string/banner1_ad_unity_id" />
-
-
-
-    <!--
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="@string/SendButtonName" /> -->
-
-
 </LinearLayout>

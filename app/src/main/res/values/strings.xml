@@ -3,6 +3,32 @@
     <string name="CatButtonName">Cat</string>
     <string name="DogButtonName">Dog</string>
     <string name="ImageDisplayDiscription">Cat or Dog</string>
-    <string name="SendButtonName">Send</string>
-    <string name="secondActivity_Description">Lets have fun with layouts. This is vertical</string>
+    <string name="SendButtonName">Next Activity</string>
+    <string name="secondActivity_Description">Lets look at this linear layout. This is vertical!</string>
+    <!--<string name="banner_ad_unity_id_test">ca-app-pub-3940256099942544/6300978111</string>-->
+    <string name="banner1_ad_unity_id">ca-app-pub-4038286169752674/9711531854</string>
+    <string name="app_id_for_admob">ca-app-pub-4038286169752674~1920671748</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="Total_Number_of_Activities">3</string>
+
+    <string name="title_activity_first">First Activity</string>
+    <string name="title_activity_second">Second Activity</string>
+    <string name="title_activity_third">Third Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment_dog">Dog Fragment! What you are seeing below is a fragment.
+        These are used to make your app UI more dynamic.
+        This allows you to use the same Activities for different screens. This is a Dog!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment_cat">Cat Fragment! What you are seeing below is a fragment.
+        These are used to make your app UI more dynamic.
+        This allows you to use the same Activities for different screens. This is Cat!</string>
 </resources>
