@@ -15,8 +15,12 @@ import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 
 public class MainActivity extends Activity {
+<<<<<<< HEAD
 
     //This is the start
+=======
+	//This is to test the github upload
+>>>>>>> 17436ec8c0a1605516cfad6b174a21ffa2a47c16
     Button dogButton;
     Button catButton;
     Button sendButton;
